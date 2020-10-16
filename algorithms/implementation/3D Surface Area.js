@@ -90,4 +90,4 @@ function wallsFromNeighbors(A, row, col) {
    return walls;
 }
 
-// Passed 25 test cases successfully.
+// Passed 26 test cases successfully.
