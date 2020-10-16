@@ -74,4 +74,4 @@ function designerPdfViewer(h, word) {
    return maxHeight * word.length;
 }
 
-// Passed 7 test cases successfully.
+// Passed all 7 test cases successfully.

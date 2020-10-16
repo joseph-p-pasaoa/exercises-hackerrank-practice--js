@@ -23,4 +23,4 @@ function countApplesAndOranges(s, t, appleTree, orangeTree, apples, oranges) {
    return;
 }
 
-// Passed 12 test cases successfully.
+// Passed all 12 test cases successfully.

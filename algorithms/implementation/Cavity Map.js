@@ -95,4 +95,4 @@ function getIsCavity(grid, row, col) {
    return curr > up && curr > down && curr > left && curr > right;
 }
 
-// Passed 23 test cases successfully.
+// Passed all 23 test cases successfully.
