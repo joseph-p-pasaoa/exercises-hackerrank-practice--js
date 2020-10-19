@@ -1,16 +1,16 @@
 # Inorder Traversal
 
 def inOrder(root):
-    def recursiveTraversal(node):
+    def recursive_traversal(node):
         if not node:
             return
 
-        recursiveTraversal(node.left)
+        recursive_traversal(node.left)
         values.append(node.info)
-        recursiveTraversal(node.right)
+        recursive_traversal(node.right)
 
     values = []
-    recursiveTraversal(root)
+    recursive_traversal(root)
 
     output = ' '.join(map(str, values))
     print(output)

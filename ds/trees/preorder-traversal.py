@@ -1,16 +1,16 @@
 # Preorder Traversal
 
 def preOrder(root):
-    def recursiveTraversal(node):
+    def recursive_traversal(node):
         if not node:
             return
 
         values.append(node.info)
-        recursiveTraversal(node.left)
-        recursiveTraversal(node.right)
+        recursive_traversal(node.left)
+        recursive_traversal(node.right)
 
     values = []
-    recursiveTraversal(root)
+    recursive_traversal(root)
 
     output = ' '.join(map(str, values))
     print(output)

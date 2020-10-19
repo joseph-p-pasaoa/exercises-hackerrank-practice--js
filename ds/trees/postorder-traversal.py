@@ -1,16 +1,16 @@
 # Postorder Traversal
 
 def postOrder(root):
-    def recursiveTraversal(node):
+    def recursive_traversal(node):
         if not node:
             return
 
-        recursiveTraversal(node.left)
-        recursiveTraversal(node.right)
+        recursive_traversal(node.left)
+        recursive_traversal(node.right)
         values.append(node.info)
 
     values = []
-    recursiveTraversal(root)
+    recursive_traversal(root)
 
     output = ' '.join(map(str, values))
     print(output)
