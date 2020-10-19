@@ -1,12 +1,12 @@
-# Preorder Traversal
+# Inorder Traversal
 
-def preOrder(root):
+def inOrder(root):
     def recursiveTraversal(node):
         if not node:
             return
 
-        values.append(node.info)
         recursiveTraversal(node.left)
+        values.append(node.info)
         recursiveTraversal(node.right)
 
     values = []
