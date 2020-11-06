@@ -1,4 +1,4 @@
-// Counting Sort
+// Counting Sort 1
 
 function countingSort(arr) {
   const counts = new Array(100).fill(0);
