@@ -5,13 +5,13 @@ function chocolateFeast(budget, cost, wrapperTradeInCost) {
 
   const chocsBought = Math.floor(budget / cost);
   counter += chocsBought;
-  let wrappersOwned = chocsBought;
+  let wrappersInHand = chocsBought;
 
-  while (wrappersOwned >= wrapperTradeInCost) {
-      const moreChocs = Math.floor(wrappersOwned / wrapperTradeInCost);
+  while (wrappersInHand >= wrapperTradeInCost) {
+      const moreChocs = Math.floor(wrappersInHand / wrapperTradeInCost);
       counter += moreChocs;
-      wrappersOwned -= moreChocs * wrapperTradeInCost;
-      wrappersOwned += moreChocs;
+      wrappersInHand -= moreChocs * wrapperTradeInCost;
+      wrappersInHand += moreChocs;
   }
 
   return counter;
