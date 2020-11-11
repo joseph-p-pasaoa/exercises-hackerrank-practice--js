@@ -2,8 +2,8 @@
 
 function beautifulDays(start, end, k) {
   let beautifulDays = 0;
-  for (let i = start; i <= end; i++) {
-      if (isBeautiful(i, k)) beautifulDays++;
+  for (let day = start; day <= end; day++) {
+      if (isBeautiful(day, k)) beautifulDays++;
   }
 
   return beautifulDays;
